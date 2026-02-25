@@ -2,18 +2,17 @@ app = "ai-asistant-mest-techstudio"
 primary_region = "ams"
 
 [build]
-dockerfile = "Dockerfile.dev
+  dockerfile = "Dockerfile.dev"
 
 [http_service]
-auto_start_machines = true
-auto_stop_machines = true
-force_https = true
-internal_port = 8080
-min_machines_running = 0
-processes = [ "app" ]
+  internal_port = 8080
+  force_https = true
+  auto_start_machines = true
+  auto_stop_machines = true
+  min_machines_running = 0
+  processes = ["app"]
 
 [[vm]]
-cpu_kind = "shared"
-cpus = 1
-memory = "1gb"
-memory_mb = 256
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 1024
