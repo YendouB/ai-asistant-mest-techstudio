@@ -2,7 +2,7 @@ app = "ai-asistant-mest-techstudio"
 primary_region = "ams"
 
 [build]
-  dockerfile = "Dockerfile.dev
+dockerfile = "Dockerfile.dev
 
 [http_service]
 auto_start_machines = true
